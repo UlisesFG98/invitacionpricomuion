@@ -306,6 +306,9 @@ onUnmounted(() => {
       </div>
 
       <img src="./assets/icons/bottom.svg" alt="hornament" width="80%">
+      <div>
+        <p class="animatedItem">Derechos Reservados Ulises Flores Grande</p>
+      </div>
     </section>
   </main>
 </template>
