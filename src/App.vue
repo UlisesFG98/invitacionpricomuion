@@ -186,7 +186,7 @@ onUnmounted(() => {
           <img src="./assets/icons/man.svg" alt="men" height="130px">
           <h3>Hombres</h3>
         </div>
-      </article>*/
+      </article>
       <h2 class="animatedItem">Evitar usar ropa en tonalidades verdes.</h2>
       <img src="./assets/icons/bottom.svg" alt="hornament" width="80%">
     </section>
