@@ -165,7 +165,7 @@ onUnmounted(() => {
       <img src="./assets/icons/single.svg" alt="hornament" height="50px">
 
       <article class="flex-c ai-c gap-30 cont-8">
-        <h2 class="animatedItem color-dark-mint">Residencia de la Familia Flores Grande</h2>
+        <h2 class="animatedItem color-dark-mint">Hogar de la Familia Flores Grande</h2>
         <h3 class="animatedItem">Después de la ceremonia religiosa</h3>
         <p class="animatedItem">Calle Hidalgo número 25</p>
       </article>
@@ -181,19 +181,12 @@ onUnmounted(() => {
         <div class="flex-c gap-20">
           <img src="./assets/icons/woman.svg" alt="woman" height="130px">
           <h3>Mujeres</h3>
-          <p class="fs-20">Vestido o mono cualquier largo</p>
-          <p class="fs-20">Bolso de mano</p>
-          <p class="fs-20">Tacones o plataformas</p>
         </div>
         <div class="flex-c gap-20">
           <img src="./assets/icons/man.svg" alt="men" height="130px">
           <h3>Hombres</h3>
-          <p class="fs-20">Traje o blazer</p>
-          <p class="fs-20">Camisa de vestir</p>
-          <p class="fs-20">Corbata opcional</p>
-          <p class="fs-20">Zapato formal o mocasines</p>
         </div>
-      </article>
+      </article>*/
       <h2 class="animatedItem">Evitar usar ropa en tonalidades verdes.</h2>
       <img src="./assets/icons/bottom.svg" alt="hornament" width="80%">
     </section>
@@ -209,7 +202,7 @@ onUnmounted(() => {
           <div>
             <h2 class="ph-20">Ceremonia</h2>
             <hr class="strg-ln">
-            <p>01:00 p.m.</p>
+            <p>12:45 p.m.</p>
           </div>
         </div>
         <!----------->
