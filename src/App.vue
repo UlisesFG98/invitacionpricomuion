@@ -111,7 +111,7 @@ onUnmounted(() => {
         <h1 class="shadow-1">Camila</h1>
         <h2 class="shadow-2" style="margin-bottom: 30px;">MIS XV AÑOS</h2>
         <Play></Play>
-        <h2 class="shadow-2">Desliza</h2>
+        <h2 class="shadow-2">Desliza hacia abajo</h2>
       </div>
 
     </article>
