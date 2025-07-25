@@ -289,7 +289,13 @@ onUnmounted(() => {
       <h1 class="reveal color-dark-mint">Asistencia</h1>
       <p class="animatedItem">Te agradecemos confirmar tu asistencia. Esperamos contar contigo</p>
       <div>
-        <a class="animatedItem link-btn-2" href="https://wa.me/522229005731" target="_blank">Confirmar asistencia</a>
+        <a
+          class="animatedItem link-btn-2"
+          href="https://wa.me/522229005731?text=¡Hola!%20Confirmo%20mi%20asistencia%20a%20la%20fiesta%20🥳"
+          target="_blank"
+        >
+        Confirmar asistencia
+        </a>
       </div>
       <img src="./assets/icons/single.svg" alt="hornament" width="50px">
       <p class="animatedItem">Gracias por formar parte de uno de los mejores días de mi vida con cariño:</p>
