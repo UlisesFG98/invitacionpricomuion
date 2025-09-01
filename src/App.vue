@@ -108,8 +108,8 @@ onUnmounted(() => {
   <header class="flex-c ai-c">
     <article class="cont-8">
       <div class="flex-c ai-c">
-        <h1 class="shadow-1">Camila</h1>
-        <h2 class="shadow-2" style="margin-bottom: 30px;">MIS XV AÑOS</h2>
+        <h1 class="shadow-1">Astrid</h1>
+        <h2 class="shadow-" style="margin-bottom: 30px;">Mi Primera Comunión</h2>
         <Play></Play>
         <h2 class="shadow-2">Desliza hacia abajo</h2>
       </div>
@@ -117,197 +117,91 @@ onUnmounted(() => {
     </article>
   </header>
   <main class=" ai-c">
+    <!-- MARCO DE FLORES -->
+<div class="flower-frame">
+  <img class="flower top-left" src="./assets/icons/image.webp" alt="flor"/>
+</div>
+
+
     <!--PADRES-->
     <section class="flex-c ai-c gap-50 cont-8 mb-50">
-      <img src="./assets/icons/top.svg" alt="hornament" width="90%">
-      <p class="animatedItem">Hay momentos que atesoramos por siempre, y para que este sea uno de ellos, me encantaría
-        compartirlo contigo.
+      <img src="./assets/icons/topd.svg" alt="hornament" width="90%">
+      <p class="animatedItem">
+        Un día tan especial merece ser compartido con quienes más quiero.<br>
+        Me encantaría que me acompañaras a celebrar este momento lleno de alegría y fe..
       </p>
-      <img src="./assets/icons/single.svg" alt="hornament" height="50px">
-      <p class="animatedItem">Gracias al amor inmenso y al apoyo incondicional de mis padres:</p>
+      <img src="./assets/icons/singled.svg" alt="hornament" height="50px">
+      <p class="animatedItem">Con cariño y gratitud a mis madrinas, que me guían y me acompañan en este día tan especial:</p>
       <h2>
-        <span class="reveal color-dark-mint">Sara Sonia Grande Rodríguez</span><br>
-        <span class="reveal">&</span><br>
-        <span class=" reveal color-dark-mint">Francisco Flores Tapia</span>
+        <span class="reveal color-rosa">Claudia Yareth Domínguez</span><br>
+        <span class="reveal color-rosa">&</span><br>
+        <span class=" reveal color-rosa">Karina León</span>
       </h2>
-      <img src="./assets/icons/bottom.svg" alt="hornament" width="80%">
+      <img src="./assets/icons/bottomd.svg" alt="hornament" width="80%">
     </section>
     <!--TIMER-->
     <section id="time" class="flex-c jc-c" style="padding-left: 10%; padding-right: 10%;">
-      <h2 class="reveal">Faltan:</h2>
-      <timer class="reveal"></timer>
+      <h2 class="reveal color-rosa">Faltan:</h2>
+      <timer class="reveal color-rosa"></timer>
     </section>
     <!--DATE-->
     <section class="flex-c ai-c pv-50 gap-50 cont-8">
-      <img src="./assets/icons/top.svg" alt="hornament" width="90%">
-      <article class="reveal flex gap-10 ai-c color-dark-mint">
+      <img src="./assets/icons/topd.svg" alt="hornament" width="90%">
+      <article class="reveal flex gap-10 ai-c color-rosa">
         <h2>SÁBADO</h2>
-        <h1>23</h1>
-        <h2>AGOSTO</h2>
+        <h1>04</h1>
+        <h2>OCTUBRE</h2>
       </article>
-      <img src="./assets/icons/bottom.svg" alt="hornament" width="80%">
+      <img src="./assets/icons/bottomd.svg" alt="hornament" width="80%">
     </section>
-    <!--PARROQUIA-->
+    <!--RECEPCION-->
     <section class="flex-c ai-c gap-50 mb-50">
       <article class="flex-c ai-c gap-30 cont-8">
-        <h2 class="animatedItem color-dark-mint">Parroquia de la Visitación de Santa Isabel Cholula</h2>
-        <h3 class="animatedItem">12: 45 p.m.</h3>
-        <p class="animatedItem">C. Zapata, Centro, 74350 Santa Isabel Cholula, Pue.</p>
+        <h2 class="animatedItem color-rosa">Jardin Avellano</h2>
+        <h3 class="animatedItem">horario</h3>
+        <p class="animatedItem">Rinconada de Los Gallos, Villas las Américas, 72810 San Andrés Cholula, Pue.</p>
       </article>
       <div id="church" class="flex-c ai-c jc-c">
-        <a class="link-btn animatedItem" href="https://share.google/ETUQr0NVinfZOuy3t" target="_blank">Ver Ubicación</a>
+        <a class="link-btn animatedItem" href="https://maps.app.goo.gl/9VdhwpH2j5y7PnUP7" target="_blank">Ver Ubicación</a>
       </div>
     </section>
 
-    <!--RECEPCION-->
-    <section class="flex-c ai-c gap-50 cont-8">
-
-      <img src="./assets/icons/single.svg" alt="hornament" height="50px">
-
-      <article class="flex-c ai-c gap-30 cont-8">
-        <h2 class="animatedItem color-dark-mint">Hogar de la Familia Flores Grande</h2>
-        <h3 class="animatedItem">Después de la ceremonia religiosa</h3>
-        <p class="animatedItem">Calle Hidalgo número 25</p>
-      </article>
-      <a class="link-btn-2 animatedItem" href="https://share.google/xW7aTupCCfDIlpYPm" target="_blank">Ver Ubicación</a>
-
-      <img src="./assets/icons/bottom.svg" alt="hornament" width="80%">
-    </section>
-
-    <!--VESTIMENTA-->
-    <section class="flex-c ai-c gap-50 pv-50 cont-8 ">
-      <h1 class="reveal color-dark-mint">Código de vestimenta</h1>
-      <article class="animatedItem flex gap-50 jc-sb cont-8">
-        <div class="flex-c gap-20">
-          <img src="./assets/icons/woman.svg" alt="woman" height="130px">
-          <h3>Mujeres</h3>
-        </div>
-        <div class="flex-c gap-20">
-          <img src="./assets/icons/man.svg" alt="men" height="130px">
-          <h3>Hombres</h3>
-        </div>
-      </article>
-      <h2 class="animatedItem">Evitar usar ropa en tonalidades verdes.</h2>
-      <img src="./assets/icons/bottom.svg" alt="hornament" width="80%">
-    </section>
-    <!--ITINERARIO-->
-    <section id="ITINERARIO" class="flex-c ai-c">
-      <article class="flex-c ai-c gap-50 pv-50 cont-8">
-        <h1 class="animatedItem">Itinerario</h1>
-        <!----------->
-        <div class="revealRight flex ai-c">
-          <div class="circle">
-            <img src="./assets/icons/church.svg" height="60%" alt="Ceremonia">
-          </div>
-          <div>
-            <h2 class="ph-20">Ceremonia</h2>
-            <hr class="strg-ln">
-            <p>12:45 p.m.</p>
-          </div>
-        </div>
-        <!----------->
-        <div class="reveal flex ai-c">
-          <div>
-            <h2 class="ph-20">Recepción</h2>
-            <hr class="strg-ln">
-            <p>03:00 p.m.</p>
-          </div>
-          <div class="circle">
-            <img src="./assets/icons/ballons.svg" height="60%" alt="Recepción">
-          </div>
-        </div>
-        <!----------->
-        <div class="revealRight flex ai-c">
-          <div class="circle">
-            <img src="./assets/icons/dance.svg" height="60%" alt="cake">
-          </div>
-          <div>
-            <h2 class="ph-20">Vals</h2>
-            <hr class="strg-ln">
-            <p>08:00 p.m.</p>
-          </div>
-        </div>
-        <!----------->
-        <div class="reveal flex ai-c">
-
-          <div>
-            <h2 class="ph-20">Brindis</h2>
-            <hr class="strg-ln">
-            <p>08:30 p.m.</p>
-          </div>
-          <div class="circle">
-            <img src="./assets/icons/cheers.svg" height="60%" alt="cake">
-          </div>
-        </div>
-        <!----------->
-        <div class="revealRight flex ai-c">
-          <div class="circle">
-            <img src="./assets/icons/cake.svg" height="60%" alt="cake">
-          </div>
-          <div>
-            <h2 class="ph-20">Pastel</h2>
-            <hr class="strg-ln">
-            <p>09:00 p.m.</p>
-          </div>
-        </div>
-
-        <h3 class="animatedItem">Hasta que el cuerpo aguante o hasta que se terminen los buenos momentos</h3>
-
-
-      </article>
-
-    </section>
+    
     <!--REGALO-->
     <section class="flex-c ai-c gap-50 pv-50 cont-8 ">
 
-      <img src="./assets/icons/top.svg" alt="hornament" width="90%">
-      <h1 class="reveal color-dark-mint">Opciones de Regalo</h1>
-      <p class="animatedItem">Lo más importante es su compañía en este día especial para mí, sin embargo, si deseas
-        darme un regalo, puedo sugerir:</p>
+      <img src="./assets/icons/topd.svg" alt="hornament" width="90%">
+      <h1 class="reveal color-rosa">Opciones de Regalo</h1>
+      <p class="animatedItem">Lo que más valoro es tu compañía en este día tan especial; sin embargo, si deseas tener un detalle conmigo, te sugiero:</p>
       <div class="animatedItem">
-        <h2 class="color-dark-mint">Lluvia de sobres</h2>
+        <h2 class="reval color-rosa">Lluvia de sobres</h2>
         <img src="./assets/icons/gift.svg" alt="hornament" width="70%">
       </div>
 
-      <img src="./assets/icons/bottom.svg" alt="hornament" width="80%">
-    </section>
-    <!--REGALO-->
-    <section id="photos" class="flex-c ai-c" style="width: 100%; justify-content: end;">
-      <article class="flex-c ai-c pv-50 gap-10 cont-8">
-        <h2 class="reveal color-white">¡Hagamos una fiesta épica!</h2>
-        <p class="animatedItem color-white">Comparte tus fotos y recuerdos en este día tan especial</p>
-        <a class="animatedItem link-btn-2" href="https://www.instagram.com/cams___fg" target="_blank"
-          style="gap: 0; margin-bottom: 10px;">
-          <img src="./assets/icons/insta.svg" alt="" width="50px">
-          <p class="color-white" style="background: none;">#XVCAMS</p>
-        </a>
-      </article>
+      <img src="./assets/icons/bottomd.svg" alt="hornament" width="80%">
     </section>
     <!--ASISTENCIA-->
     <section class="flex-c ai-c gap-50 pv-50 cont-8 ">
-      <img src="./assets/icons/top.svg" alt="hornament" width="90%">
-      <h1 class="reveal color-dark-mint">Asistencia</h1>
+      <img src="./assets/icons/topd.svg" alt="hornament" width="90%">
+      <h1 class="reveal color-rosa">Asistencia</h1>
       <p class="animatedItem">Te agradecemos confirmar tu asistencia. Esperamos contar contigo</p>
       <div>
         <a
           class="animatedItem link-btn-2"
-          href="https://wa.me/522229005731?text=¡Hola!%20Confirmo%20mi%20asistencia%20a%20la%20fiesta%20🥳"
+          href="https://wa.me/522229291370?text=¡Hola!%20Confirmo%20mi%20asistencia%20a%20la%20fiesta%20🥳"
           target="_blank"
         >
         Confirmar asistencia
         </a>
       </div>
-      <img src="./assets/icons/single.svg" alt="hornament" width="50px">
-      <p class="animatedItem">Gracias por formar parte de uno de los mejores días de mi vida con cariño:</p>
+      <img src="./assets/icons/singled.svg" alt="hornament" width="50px">
+      <p class="animatedItem">"Con gratitud a Dios y a ustedes por acompañarme en este día tan especial:"</p>
       <div>
         <img class="animatedItem" src="/img/crown.png" alt="hornament" width="90%">
-        <h1 class="reveal color-dark-mint" style="font-size: 100px; line-height: 85px;">Camila</h1>
+        <h1 class="reveal color-rosa" style="font-size: 100px; line-height: 85px;">Astrid</h1>
       </div>
 
-      <img src="./assets/icons/bottom.svg" alt="hornament" width="80%">
-      <div>
-        <p class="animatedItem">Derechos Reservados Ulises Flores Grande</p>
-      </div>
+      <img src="./assets/icons/bottomd.svg" alt="hornament" width="80%">
     </section>
   </main>
 </template>

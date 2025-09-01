@@ -1,30 +1,36 @@
-//VAR
+// VAR
 $cursiva: 'Cookie', cursive
-$cursiva-2:"Borel", cursive
+$cursiva-2: "Borel", cursive
 $Helvetica: Helvetica, sans-serif
-//FONT SIZES
+
+// FONT SIZES
 $s16: 1rem
-$s18:1.125rem
-$s20:1.25rem
-$s24:1.5rem
-$s28:1.75rem
-$s32:2rem
-$s36:2.25rem
-$s40:2.5rem
-$s60:3.75rem
+$s18: 1.125rem
+$s20: 1.25rem
+$s24: 1.5rem
+$s28: 1.75rem
+$s32: 2rem
+$s36: 2.25rem
+$s40: 2.5rem
+$s60: 3.75rem
 
+// SHADOWS
 $shadow-1: rgba(0, 0, 0, 0.1) 0px 4px 12px
-$shadow-2: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-//COLORS
-$dark-color:#1d1d1f
-$bg-color: #d7fad7
-$bg-color-2:#f1f3fb
-$white-color: #fff
-$menta:#bef9c3  
-$body-color:#1A2B3C 
-$dark-mint:#85b185
+$shadow-2: rgba(0, 0, 0, 0.16) 0px 1px 4px
 
-//HTML
+// COLORS
+$bg-color: #ffffff          // fondo principal
+$bg-color-2: #f8f0f8        // rosa pastel suave
+$white-color: #ffffff
+$lila: #c8a2c8
+$dorado: #f5d16c
+$body-color: #333333        // texto principal
+$rosa-pastel: #ffd6e0
+$dark-mint: #f5d16c         // acentos
+$dark-color: #dbc2dbff        // fondo oscuro para gradiente
+$header-color: $lila
+
+// GLOBAL RESET
 html,
 body,
 div,
@@ -32,103 +38,44 @@ span,
 applet,
 object,
 iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video
+h1,h2,h3,h4,h5,h6,
+p,blockquote,pre,
+a,abbr,acronym,address,big,cite,code,
+del,dfn,em,img,ins,kbd,q,s,samp,small,
+strike,strong,sub,sup,tt,var,b,u,i,center,
+dl,dt,dd,ol,ul,fieldset,form,label,legend,
+table,caption,tbody,tfoot,thead,tr,th,td,
+article,aside,canvas,details,embed,
+figure,figcaption,footer,header,hgroup,
+menu,nav,output,ruby,section,summary,
+time,mark,audio,video
     border: 0
     box-sizing: border-box
     margin: 0
     padding: 0
     vertical-align: baseline
+
 html, body
     font-family: $Helvetica
     font-size: $s16
-    scrollbar-width: thin
     color: $body-color
     background-color: $bg-color
+    scrollbar-width: thin
+
 main
     padding-top: 40px
     padding-bottom: 40px
     display: flex
     flex-direction: column
     width: 100%
+
 header
     width: 100%
     height: 100vh
-    background: linear-gradient(to top, $dark-color 5%, rgba(255,255,255,0) 70%), url('/img/main.jpeg') no-repeat 40% top /170%
+    background: linear-gradient(to top, $dark-color 55%, rgba(205, 53, 127, 0) 70%), url('/img/main.jpeg') no-repeat 50% top /120%
     color: $white-color
     position: relative
+
 header article
     padding-bottom: 20px
     position: absolute
@@ -136,22 +83,26 @@ header article
 
 h1,h2,h3,h4,h5
     font-family: $cursiva
+
 p
     font-family: $cursiva
     font-size: $s28
     font-weight: 600
-h2
-    font-size: $s40
+
 h1
     font-size: $s60
+h2
+    font-size: $s40
 h3
     font-size: $s36
+
 .shadow-1
-    font-size: 100px
-    text-shadow: 4px 4px .5px $dark-mint
+    font-size: 80px
+    text-shadow: 4px 4px .5px $rosa-pastel
 .shadow-2
-    font-size: 40px
-    text-shadow: 2px 1px $dark-mint;
+    font-size: 30px
+    text-shadow: 2px 1px $rosa-pastel
+
 .txt-c
     text-align: center
 .txt-r
@@ -161,6 +112,7 @@ h3
 .txt-j-c
     text-align: justify
     text-align-last: center
+
 .flex
     display: flex
 .flex-c
@@ -178,8 +130,7 @@ h3
     justify-content: space-around
 .jc-sb
     justify-content: space-between
-.animation-nose
-    //style="transform: matrix(1, 0, 0, 1, 0, 30); opacity: 0;"
+
 .fg-1
     flex-grow: 1
 .gap-10
@@ -191,7 +142,7 @@ h3
 .gap-50
     gap: 50px
 
-//---------PADDING-------
+// PADDING / MARGIN
 .pd-10-20
     padding: 10px 20px
 .pd-10
@@ -202,12 +153,12 @@ h3
     padding: 50px 0
 .ph-20
     padding: 0 20px
-
 .mt-20
     margin-top: 20px
 .mb-50
     margin-bottom: 50px
-//---------FONTS-------
+
+// FONTS
 .fs-16
     font-size: $s16
 .fs-18
@@ -230,65 +181,74 @@ h3
     font-weight: 600
 .cont-8
     width: 80%
+
 .color-dark-mint
     color: $dark-mint
-    text-shadow: 1px 1px .5px $body-color
 .color-white
     color: $white-color
-    text-shadow: 1px 1px .5px $body-color
+.color-lila
+    color: $lila
+.color-rosa
+    color: $rosa-pastel
+.color-dorado
+    color: $dorado
 
+// SECCIONES
 #time
     width: 100%
     height: 600px
+    background-color: $bg-color-2
     background: linear-gradient(to top, $bg-color 0%, rgba(255,255,255,0) 25%, rgba(255,255,255,0) 75%, $bg-color 100%),url('/img/main3.jpeg') no-repeat 25% 18% /160%
-    color: $white-color
+    color: $body-color
+
 #church
     width: 100%
-    height: 200px
-    background: linear-gradient(#1a2b3c17),url('/img/church.jpg') no-repeat 25% 28% /100%
+    height: 340px
+    background: linear-gradient(#1a2b3c17),url('/img/church.jpeg') no-repeat 25% 10% /100%
     color: $white-color
+
 #ITINERARIO
     width: 100%
     height: auto
-    background: linear-gradient(to top, $bg-color 0%, rgba(255,255,255,0) 20%,rgba(255,255,255,0) 80%, $bg-color 100%,), url('/img/mint-bg.jpg') no-repeat 10% center / auto 100%
+    background-color: $rosa-pastel
+
 #photos
     width: 100%
     height: 500px
-    background: linear-gradient(to top, $bg-color 0%, rgba(255,255,255,0) 20%,rgba(255,255,255,0) 85%, $bg-color 100%,), url('/img/photos.jpeg') no-repeat 0% 30% / 140%
+    background-color: $dorado
     p
         font-size: 19px
-        background-color: $dark-mint
+        background-color: $lila
         border-radius: 15px
         padding: 10px
-
-
 
 .timer
     p
         font-size: 50px
     border: solid
     background: rgba(29, 29, 31, 0.4)
+
 .link-btn
     text-decoration: none
     color: $body-color
     font-family:$cursiva
     font-size: $s28
     font-weight: 600
-    //text-shadow: 1px 1px .5px $body-color
-    background-color: $bg-color
+    background-color: $white-color
     border-radius: 15px
     padding: 10px
     transition: .2s ease-in-out
 .link-btn:hover
-    background-color: $dark-mint
+    background-color: $rosa-pastel
     color: $white-color
 
 .link-btn-2
     @extend .link-btn
-    background-color: $dark-mint
+    background-color: $lila
     color: $white-color
 .link-btn-2:hover
-    background-color: $dark-color
+    background-color: $lila
+
 .circle
     width: 120px
     height: 120px
@@ -296,14 +256,58 @@ h3
     display: flex
     justify-content: center
     align-items: center
+    background-color: $rosa-pastel
     
 .strg-ln
     border: none
     width: auto
     height: 5px
-.strg-ln,.circle
-    background-color: $body-color
+.strg-ln, .circle
+    background-color: $dorado
+
 .play
     background: none
     border: none
     cursor: pointer
+
+
+.flower-frame .flower
+  width: 600px
+  height: 400px
+  position: absolute
+  animation: float 8s ease-in-out infinite
+
+  &.top-left
+    top: -150px
+    left: -120px
+  &.top-center
+    top: 20px
+    left: 50%
+    transform: translateX(-50%)
+  &.top-right
+    top: 20px
+    right: 20px
+  &.bottom-left
+    bottom: 20px
+    left: 20px
+  &.bottom-center
+    bottom: 20px
+    left: 50%
+    transform: translateX(-50%)
+  &.bottom-right
+    bottom: 20px
+    right: 20px
+  &.left-center
+    top: 50%
+    left: 20px
+    transform: translateY(-50%)
+  &.right-center
+    top: 50%
+    right: 20px
+    transform: translateY(-50%)
+
+@keyframes float
+  0%, 100%
+    transform: translateY(0px)
+  50%
+    transform: translateY(-15px)

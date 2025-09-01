@@ -7,7 +7,7 @@
 <script setup>
 import {ref, computed, onMounted, onBeforeMount} from 'vue';
 
-const targetTime= new Date("2025-08-23T23:59:59").getTime();
+const targetTime = new Date("2025-10-04T23:59:59").getTime();
 const currentTime = ref(new Date().getTime());
 const timeRemaining = ref(targetTime - currentTime.value);
 
