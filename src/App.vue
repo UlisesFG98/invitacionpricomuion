@@ -196,10 +196,5 @@ onUnmounted(() => {
     </section>
   </main>
   <footer>
-    <article class="cont-8">
-      <div class="flex-c ai-c">
-        <p class="animatedItem">"Derechos reservados Ulises Flores Grande"</p>
-      </div>
-    </article>
   </footer>
 </template>
