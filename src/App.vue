@@ -124,18 +124,8 @@ onUnmounted(() => {
       </p>
       <img src="./assets/icons/singled.svg" alt="hornament" height="50px">
       <p class="animatedItem">Con cariño y gratitud a quienes me acompaña en este día tan especial, mis Madrinas:</p>
-      <h2>
-        <span class="reveal color-rosa">
-        Yareth Domínguez
-      </span>
-      <br></br>
-      <span class="reveal color-rosa">
-        &
-      </span>
-      <br></br>
-      <span class="reveal color-rosa">
-        Karina Leon Cázales
-      </span>
+      <h2 class=" reveal color-rosa">
+        Yareth Domínguez <br> & <br> Karina Leon Cázales
       </h2>
       <p class="animatedItem"> Con todo mi amor y agradecimiento a la persona que me guía y me brinda su apoyo incondicional, mi Mamá:</p>
       <h2>
