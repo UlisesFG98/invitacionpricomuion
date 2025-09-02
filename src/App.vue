@@ -25,7 +25,7 @@ onMounted(() => {
         y: 0,
         duration: 0.8,
         ease: 'power4.out',
-        delay: index * 0.1, // escalonado bonito
+        delay: index * 0.05, // escalonado bonito
         scrollTrigger: {
           trigger: item,
           start: 'top 85%',
@@ -53,10 +53,10 @@ onMounted(() => {
         y: 0,
         duration: 1.2,
         ease: 'power4.out',
-        delay: index * 0.15,
+        delay: index * 0.05,
         scrollTrigger: {
           trigger: element,
-          start: 'top 85%',
+          start: 'top 100%',
           toggleActions: 'play none none reverse',
           id: `reveal-animation-${index}`,
           // markers: true,
@@ -81,7 +81,7 @@ onMounted(() => {
         y: 0,
         duration: 1.2,
         ease: 'power4.out',
-        delay: index * 0.15,
+        delay: index * 0.05,
         scrollTrigger: {
           trigger: element,
           start: 'top 85%',
@@ -125,13 +125,9 @@ onUnmounted(() => {
       <img src="./assets/icons/singled.svg" alt="hornament" height="50px">
       <p class="animatedItem">Con cariño y gratitud a quienes me acompaña en este día tan especial, mis Madrinas:</p>
       <h2>
-        <span class="reveal color-rosa">Claudia Yareth Domínguez</span><br>
-      </h2>
-      <h2>
-        <span class="reveal color-rosa">&</span><br>
-      </h2>
-      <h2>
-        <span class="reveal color-rosa">Karina Leon Cázales</span><br>
+        <span class="reveal color-rosa">
+         Yareth Domínguez <br> & <br> Karina Leon Cázales
+      </span>
       </h2>
       <p class="animatedItem"> Con todo mi amor y agradecimiento a la persona que me guía y me brinda su apoyo incondicional, mi Mamá:</p>
       <h2>
