@@ -11,95 +11,89 @@ gsap.registerPlugin(ScrollTrigger);
 //const animatedElement= ref(null);
 
 onMounted(() => {
+  // Fade + slide-up
   const items = document.querySelectorAll('.animatedItem');
-
   items.forEach((item, index) => {
     gsap.fromTo(
-      item, {
-      //INITIAL STATE
-      opacity: 0,
-      y: 50
-    },
-      {//FINAL STATE
+      item,
+      {
+        opacity: 0,
+        y: 50
+      },
+      {
         opacity: 1,
         y: 0,
-        duration: .8,
+        duration: 0.8,
         ease: 'power4.out',
-
+        delay: index * 0.1, // escalonado bonito
         scrollTrigger: {
           trigger: item,
-          start: 'top 90%',
-          end: 'bottom 80%',
-          scrub: true,
-          //markers:true,
-          id: `item-animation-${index}`
+          start: 'top 85%',
+          toggleActions: 'play none none reverse',
+          id: `item-animation-${index}`,
+          // markers: true,
         }
       }
     );
   });
-});
-onMounted(() => {
-  const revealElement = document.querySelectorAll('.reveal');
-  revealElement.forEach((element, index) => {
+
+  // Reveal desde izquierda
+  const revealLeft = document.querySelectorAll('.reveal');
+  revealLeft.forEach((element, index) => {
     gsap.fromTo(
-      element, {
-      //INITIAL STATE
-      clipPath: 'inset(0 100% 0 0)',
-      opacity: 0,
-      y: 20
-    },
-      {//FINAL STATE
+      element,
+      {
+        clipPath: 'inset(0 100% 0 0)',
+        opacity: 0,
+        y: 20
+      },
+      {
         clipPath: 'inset(0 0% 0 0)',
         opacity: 1,
         y: 0,
-        duration: 2,
+        duration: 1.2,
         ease: 'power4.out',
-
+        delay: index * 0.15,
         scrollTrigger: {
           trigger: element,
-          start: 'top 80%',
-          end: 'bottom 60%',
-          scrub: true,
-          //markers:true,
-          id: `reveal-animation-${index}`
+          start: 'top 85%',
+          toggleActions: 'play none none reverse',
+          id: `reveal-animation-${index}`,
+          // markers: true,
         }
-
       }
-
     );
   });
-});
-onMounted(() => {
-  const revealElement = document.querySelectorAll('.revealRight');
-  revealElement.forEach((element, index) => {
+
+  // Reveal desde derecha
+  const revealRight = document.querySelectorAll('.revealRight');
+  revealRight.forEach((element, index) => {
     gsap.fromTo(
-      element, {
-      //INITIAL STATE
-      clipPath: 'inset(0 0 0 100%)',
-      opacity: 0,
-      y: 20
-    },
-      {//FINAL STATE
+      element,
+      {
+        clipPath: 'inset(0 0 0 100%)',
+        opacity: 0,
+        y: 20
+      },
+      {
         clipPath: 'inset(0 0 0 0%)',
         opacity: 1,
         y: 0,
-        duration: 2,
+        duration: 1.2,
         ease: 'power4.out',
-
+        delay: index * 0.15,
         scrollTrigger: {
           trigger: element,
-          start: 'top 80%',
-          end: 'bottom 60%',
-          scrub: true,
-          //markers:true,
-          id: `reveal-animation-r-${index}`
+          start: 'top 85%',
+          toggleActions: 'play none none reverse',
+          id: `reveal-animation-r-${index}`,
+          // markers: true,
         }
-
       }
-
     );
   });
 });
+
 onUnmounted(() => {
   ScrollTrigger.getAll().forEach(trigger => trigger.kill());
 });
@@ -117,25 +111,25 @@ onUnmounted(() => {
     </article>
   </header>
   <main class=" ai-c">
-    <!-- MARCO DE FLORES -->
-<div class="flower-frame">
-  <img class="flower top-left" src="./assets/icons/image.webp" alt="flor"/>
-</div>
-
-
     <!--PADRES-->
     <section class="flex-c ai-c gap-50 cont-8 mb-50">
-      <img src="./assets/icons/topd.svg" alt="hornament" width="90%">
+      <img  src="./assets/icons/topd.svg" alt="hornament" width="90%">
+      <p class="animatedItem">
+        "Hoy te abro las puertas de mi mente, mi alma y mi corazón, para que vivas eternamente en mí. Protégeme, bendice mi camino y guíame siempre hacia ti, Señor Jesús."
+      </p>
+      <img src="./assets/icons/comu1.jpg" alt="hornament" width="60%">
       <p class="animatedItem">
         Un día tan especial merece ser compartido con quienes más quiero.<br>
         Me encantaría que me acompañaras a celebrar este momento lleno de alegría y fe..
       </p>
       <img src="./assets/icons/singled.svg" alt="hornament" height="50px">
-      <p class="animatedItem">Con cariño y gratitud a mis madrinas, que me guían y me acompañan en este día tan especial:</p>
+      <p class="animatedItem">Con cariño y gratitud a quien me acompaña en este día tan especial, mi Madrina:</p>
       <h2>
         <span class="reveal color-rosa">Claudia Yareth Domínguez</span><br>
-        <span class="reveal color-rosa">&</span><br>
-        <span class=" reveal color-rosa">Karina León</span>
+      </h2>
+      <p class="animatedItem"> Con todo mi amor y agradecimiento a la persona que me guía y me brinda su apoyo incondicional, mi Mamá:</p>
+      <h2>
+        <span class=" reveal color-rosa">Daniella Domínguez</span>
       </h2>
       <img src="./assets/icons/bottomd.svg" alt="hornament" width="80%">
     </section>
@@ -197,11 +191,15 @@ onUnmounted(() => {
       <img src="./assets/icons/singled.svg" alt="hornament" width="50px">
       <p class="animatedItem">"Con gratitud a Dios y a ustedes por acompañarme en este día tan especial:"</p>
       <div>
-        <img class="animatedItem" src="/img/crown.png" alt="hornament" width="90%">
         <h1 class="reveal color-rosa" style="font-size: 100px; line-height: 85px;">Astrid</h1>
       </div>
-
-      <img src="./assets/icons/bottomd.svg" alt="hornament" width="80%">
     </section>
   </main>
+  <footer>
+    <article class="cont-8">
+      <div class="flex-c ai-c">
+        <p class="animatedItem">"Derechos reservados Ulises Flores Grande"</p>
+      </div>
+    </article>
+  </footer>
 </template>
