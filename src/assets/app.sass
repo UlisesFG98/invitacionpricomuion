@@ -313,13 +313,25 @@ h3
     transform: translateY(-15px)
 
 footer
-    width: 100%
-    height: 100vh
-    background: linear-gradient(to top, $dark-color 38%, rgba(205, 53, 127, 0) 60%), url('/img/comu3.jpg') no-repeat 50% top /100%
-    color: $white-color
-    position: relative
+  width: 100%
+  height: 100vh
+  background: linear-gradient(to top, $dark-color 38%, rgba(205, 53, 127, 0) 60%), url('/img/comu3.jpg') no-repeat 50% top /120%
+  color: $white-color
+  display: flex
+  align-items: flex-start  // contenido empezará desde arriba
+  justify-content: center
+  position: relative
 
 footer article
-    padding-bottom: 20px
-    position: absolute
-    bottom: 0 
+  padding-top: 60vh   // mueve el contenido hacia abajo
+  text-align: center
+
+footer article h1
+  font-size: 40px
+  line-height: 1.2
+
+footer article p
+  font-size: 18px
+  margin-top: 10px
+
+

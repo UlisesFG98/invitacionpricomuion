@@ -123,9 +123,15 @@ onUnmounted(() => {
         Me encantaría que me acompañaras a celebrar este momento lleno de alegría y fe..
       </p>
       <img src="./assets/icons/singled.svg" alt="hornament" height="50px">
-      <p class="animatedItem">Con cariño y gratitud a quien me acompaña en este día tan especial, mi Madrina:</p>
+      <p class="animatedItem">Con cariño y gratitud a quienes me acompaña en este día tan especial, mis Madrinas:</p>
       <h2>
         <span class="reveal color-rosa">Claudia Yareth Domínguez</span><br>
+      </h2>
+      <h2>
+        <span class="reveal color-rosa">&</span><br>
+      </h2>
+      <h2>
+        <span class="reveal color-rosa">Karina Leon Cázales</span><br>
       </h2>
       <p class="animatedItem"> Con todo mi amor y agradecimiento a la persona que me guía y me brinda su apoyo incondicional, mi Mamá:</p>
       <h2>
@@ -152,7 +158,7 @@ onUnmounted(() => {
     <section class="flex-c ai-c gap-50 mb-50">
       <article class="flex-c ai-c gap-30 cont-8">
         <h2 class="animatedItem color-rosa">Jardin Avellano</h2>
-        <h3 class="animatedItem">horario</h3>
+        <h3 class="animatedItem">Horario: 2:00 p.m.</h3>
         <p class="animatedItem">Rinconada de Los Gallos, Villas las Américas, 72810 San Andrés Cholula, Pue.</p>
       </article>
       <div id="church" class="flex-c ai-c jc-c">
@@ -196,5 +202,10 @@ onUnmounted(() => {
     </section>
   </main>
   <footer>
+    <article class="flex-c ai-c jc-c">
+      <h1 class="reveal color-rosa" style="font-size: 20px; line-height: 350px;">
+        Derechos Reservados Ulises Flores Grande
+      </h1>
+    </article>
   </footer>
 </template>
